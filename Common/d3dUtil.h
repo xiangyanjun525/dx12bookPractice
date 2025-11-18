@@ -63,7 +63,7 @@ public:
 
     static std::string ToString(HRESULT hr);
 
-    static UINT CalConstantBufferByteSize(UINT byteSize)
+    static UINT CalcConstantBufferByteSize(UINT byteSize)
     {
         return (byteSize + 255) & ~255;
     }
@@ -107,7 +107,7 @@ struct SubmeshGeometry
     DirectX::BoundingBox Bounds;
 };
 
-struct Meshgeometry
+struct MeshGeometry
 {
     std::string Name;
 
